@@ -1,0 +1,24 @@
+
+<section class="modal">
+  <section class="popUpContents">
+    <app-inner-most-comp>
+
+    </app-inner-most-comp>
+  <div>
+    <button (click) = 'notifyParent()'>
+      Click Me TO Close ME !!!!!
+    </button>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-select [ngModel] = 'selected.name' (selectionChange) = 'lol($event)'>
+        <mat-option *ngFor = 'let option of options' [value] = 'option'>{{option.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button (click) = 'changeColors()'>
+    Click Me TO Change Colors!!!!!
+  </button>
+
+</section>
+</section>
